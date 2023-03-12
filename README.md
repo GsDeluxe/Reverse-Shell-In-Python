@@ -8,11 +8,13 @@ A Multi Client And Singular Client Reverse Shell Made In Python
 
 client.py
 ```Python
-s.connect(("HOST", PORT))
+host = "YOUR HOST"
+port = "YOUR PORT"
 ```
 server.py
 ```Python
-sock.bind(("HOST", PORT))
+host = "YOUR HOST"
+port = "YOUR PORT"
 ```
 
 2. Compile Client
