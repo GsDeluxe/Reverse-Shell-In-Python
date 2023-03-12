@@ -92,7 +92,9 @@ Output = Red
 			Write.Print(result, Colors.red_to_white, interval=0)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(("127.0.0.1", 1604))
+host = "127.0.0.1"
+port = 1604
+sock.bind((host, port))
 Write.Print("[+] Listening For Incoming Connections", Colors.blue_to_purple, interval=0.05)
 print("")
 sock.listen(5)
