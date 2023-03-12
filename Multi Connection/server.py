@@ -102,6 +102,8 @@ def communication(client_object, ip_addrs):
 if __name__=="__main__":
     connected = False
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.bind(("127.0.0.1", 5666))
+    host = "127.0.0.1"
+    port = 5666
+    sock.bind((host, port))
     threading.Thread(target=connection_thread).start()
     server_menu()
