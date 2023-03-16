@@ -42,6 +42,6 @@ def communication():
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "127.0.0.1"
 port = 5666
-s.connect((hsot, port))
+s.connect((host, port))
 communication()
 exit()

