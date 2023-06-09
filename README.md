@@ -1,6 +1,8 @@
 # Reverse-Shell-In-Python
 A Multi Client And Singular Client Reverse Shell Made In Python
 
+⚠️ I AM NOT RESPONSIBLE FOR ANY MISUSE OF THIS TOOL
+
 ## Setup
 
 1. Edit Host And Client
